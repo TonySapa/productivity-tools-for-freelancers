@@ -1,0 +1,11 @@
+{
+	"Document with a comment": {
+		"prefix": "doco",
+		"body": [
+			"/******************************************************************************",
+			" * @returns",
+			" *****************************************************************************/"
+		],
+		"description": "Documents with a 80 columns size comment that can be detected by code-level documentation tools such as JSDoc or Typedoc"
+	}
+}
