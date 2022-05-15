@@ -61,7 +61,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Will run eslint with --fix parameter. The configuration can be found on .eslintrc.js file on root folder.
 
-### `
+### `yarn docs`
+
+Opens typedoc generated documentation on a new browser tab.
 
 ### `yarn precommit`
 
