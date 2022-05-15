@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { component, styles, testFile, types } from './contents/index.js'
+import { component, stories, styles, testFile, types } from './contents/index.js'
 
 /******************************************************************************
  * Directory of components. A folder named components. Should be specified
@@ -44,33 +44,45 @@ async function createComponent () {
     }
   )
 
-  fs.writeFileSync(`${dir}/${componentName}.styles.tsx`, styles, err => {
-    if (err) {
-      console.error(err);
-    }
-    // file written successfully
-  })
+  try {
+    fs.writeFileSync(`${dir}/${componentName}.styles.tsx`, styles)
+    console.log(`\u001b[1;32m ✓ ${componentName}.styles.tsx successfully generated.`)
+  } catch (err) {
+    console.log(`\u001b[1;31m ✖ ${componentName}.styles.tsx could not be generated.`)
+    console.log(err)
+  }
 
-  fs.writeFileSync(`${dir}/${componentName}.types.tsx`, types(componentName), err => {
-    if (err) {
-      console.error(err);
-    }
-    // file written successfully
-  })
+  try {
+    fs.writeFileSync(`${dir}/${componentName}.types.tsx`, types(componentName))
+    console.log(`\u001b[1;32m ✓ ${componentName}.types.tsx successfully generated.`)
+  } catch (err) {
+    console.log(`\u001b[1;31m ✖ ${componentName}.types.tsx could not be generated.`)
+    console.log(err)
+  }
 
-  fs.writeFileSync(`${dir}/${componentName}.tsx`, component(componentName), err => {
-    if (err) {
-      console.error(err);
-    }
-    // file written successfully
-  })
+  try {
+    fs.writeFileSync(`${dir}/${componentName}.tsx`, component(componentName))
+    console.log(`\u001b[1;32m ✓ ${componentName}.tsx successfully generated.`)
+  } catch (err) {
+    console.log(`\u001b[1;31m ✖ ${componentName}.tsx could not be generated.`)
+    console.log(err)
+  }
 
-  fs.writeFileSync(`${dir}/${componentName}.test.tsx`, testFile(componentName), err => {
-    if (err) {
-      console.error(err);
-    }
-    // file written successfully
-  })
+  try {
+    fs.writeFileSync(`${dir}/${componentName}.test.tsx`, testFile(componentName))
+    console.log(`\u001b[1;32m ✓ ${componentName}.test.tsx successfully generated.`)
+  } catch (err) {
+    console.log(`\u001b[1;31m ✖ ${componentName}.test.tsx could not be generated.`)
+    console.log(err)
+  }
+
+  try {
+    fs.writeFileSync(`${dir}/${componentName}.stories.tsx`, stories(componentName))
+    console.log(`\u001b[1;32m ✓ ${componentName}.stories.tsx successfully generated.`)
+  } catch (err) {
+    console.log(`\u001b[1;31m ✖ ${componentName}.stories.tsx could not be generated.`)
+    console.log(err)
+  }
 }
 
 createComponent()
