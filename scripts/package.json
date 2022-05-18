@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "scripts": {
-    "component": "node './init-component' './components'"
-  }
-}
