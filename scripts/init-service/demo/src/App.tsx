@@ -16,7 +16,7 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div>
       <button onClick={() => handleClick('spain')}>Spain</button>
       <button onClick={() => handleClick('non-existing')}>Non-existing</button>
       <h1>{text}</h1>
