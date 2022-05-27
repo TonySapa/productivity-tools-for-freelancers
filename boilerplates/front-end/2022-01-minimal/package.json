@@ -34,7 +34,10 @@
     "eject": "react-scripts eject",
     "lint": "yarn run eslint --fix . --ext .js,.jsx,ts,tsx",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "component": "node 'node_modules/@tonisanchez.dev/init-component' './src/components'",
+    "page": "node 'node_modules/@tonisanchez.dev/init-component' './src/pages'",
+    "service": "node node_modules/@tonisanchez.dev/init-service './src/services'"
   },
   "eslintConfig": {
     "extends": [
@@ -61,6 +64,8 @@
     "@storybook/addon-links": "^6.4.22",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
+    "@tonisanchez.dev/init-component": "latest",
+    "@tonisanchez.dev/init-service": "latest",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.15.0",

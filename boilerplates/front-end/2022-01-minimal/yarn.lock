@@ -3029,6 +3029,16 @@
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
   integrity sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==
 
+"@tonisanchez.dev/init-component@latest":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tonisanchez.dev/init-component/-/init-component-1.0.0.tgz#04d8050f1f517232ee7ed06054d13c20f1cb791f"
+  integrity sha512-xpqMm8pRYbqUdQwlh6Wv4RBT//X/afw1puZ5uzPExWyZ4LeHwRTIiT/W7fWOcqQE/aFKpwkZ3A/FoJFYXDCFXw==
+
+"@tonisanchez.dev/init-service@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@tonisanchez.dev/init-service/-/init-service-1.0.4.tgz#13b6f9d6d249af0b99a00ab407bb54e9a1143e4b"
+  integrity sha512-tGgq50lEXHoD0BE4zVLV6MLWByAiGzfGzyvojBcwoFdFCmqnCeOa15tdghN3FH7qs0Mk0fePFZzdnBhTb9WK6g==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
